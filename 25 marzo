@@ -1,0 +1,18 @@
+help (AirPassengers)
+data ("AirPassengers")
+panam <-(AirPassengers)
+class (panam)
+start(panam); end(panam); frequency(panam)
+panam
+ppp<- ts(base1, start=c(1998,1), freq=4)
+ts()
+layout(1:2)
+plot (panam)
+plot(panam, ylab="Pasajeros (miles)", xlab="Años", main="Número de pasajeros aereos en EU, 1949-1980")
+plot(aggregate (panam))
+
+###Ejercicio
+# 1) generar un data frame con la tasa de desocupacion que inicia en el primer trimestre del 2005
+#Tasa desocupacion 3.4, 4.8, 3.3, 5.6, 3.2, 2.9, 1.9, 2.8, 6.0, 4.3, 2.2
+# 2) convertir en serie de tiempo y graficar la serie de tiempo y la tendencia
+# 3) obtener un pdf/jpg/tiff/png con las dos graficas en una misma imagen
